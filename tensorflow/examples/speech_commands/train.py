@@ -145,6 +145,7 @@ def main(_):
     control_dependencies = [checks]
 
   # Create the back propagation and training evaluation machinery in the graph.
+  # Adding comment to test code changes to Github - Harish001
   with tf.compat.v1.name_scope('cross_entropy'):
     cross_entropy_mean = tf.compat.v1.losses.sparse_softmax_cross_entropy(
         labels=ground_truth_input, logits=logits)
